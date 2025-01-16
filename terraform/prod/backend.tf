@@ -1,10 +1,8 @@
 terraform {
   backend "s3" {
-    # replace with your bucket name
-    bucket = "your-bucket-name-here-123"
-
+    bucket = "aitco-terraform-state"
     key    = "nextjs-fargate-terraform"
-    region = "eu-west-2"
+    region = "us-east-2"
   }
   required_providers {
     aws = {
